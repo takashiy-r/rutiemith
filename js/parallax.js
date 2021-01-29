@@ -1,25 +1,37 @@
 
 $(function(){
+    
+    // $('.box1').css('background-position','center ','top');
             $(window).scroll(function(){
                 var roll = $(this).scrollTop();
                 console.log(roll);
-                $('#bg1').css('background-position','center '+roll+'px');
+                var window_h = window.innerHeight;
+                console.log(window_h);
+
                 // $('#bg2').css('position',);
-                if(roll > 600){
-                    $('#bg2').css('position','0 '+(roll-600)+'px');
+                if(roll/window_h > 0.4 && roll/window_h < 0.8){
+                    $('.box3').css('background-position','right '+(roll-window_h*0.4)+'px');
+                }else if(roll/window_h > 0.8){
+                    $('.box4').css('background-position','center '+(roll-window_h*0.6)+'px');
+                    // $('.img1').css('position','right '+(roll-window_h*0.4)+'px');
                 }else{
-                    $('#bg2').css('position','0 0');
+                    $('.box3').css('background-position','right 0');
+                    $('.box4').css('background-position','center 0');
+                }                
+                if(roll = window_h){
+                    $('.box4').css('background-position','center bottom');
+                    $('.img1').css('position','right bottom');
                 }
-                if(roll > 800){
+/*                 if(roll > 1600){
                     $('#bg3').css('background-position','0 '+(roll-1600)+'px');
                 }else{
                     $('#bg3').css('background-position','0 0');
-                }
+                } */
 /*                 if(roll > 1600){
-                    $('#msg').css('opacity', (roll-1600)/800);
-                    $('#msg').css('top',500);
+                    $('#contact').css('opacity', (roll-1600)/800);
+                    $('#contact').css('top',500);
                   }else{
-                    $('#msg').css('opacity', 0);
+                    $('#contact').css('opacity', 0);
                   } */
             });
 });
