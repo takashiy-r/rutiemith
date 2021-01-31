@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 html {
     height: 100%;
     font-size: x-large;
@@ -8,7 +9,6 @@ body {
     margin:0;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif ;
-    /* background-color: rgba(255,0, 0, 0) ; */
 }
 .box1{
     padding: 0;
@@ -27,13 +27,12 @@ body {
     padding: 0;
     margin: 0;
     width:100%;
-    height: 75%;
-    /* background:url('../gazou/icontouka.png') no-repeat; */
+    height: 100%;
     position: relative;
     z-index: 4;
-    background-size: 30% auto;
+/*     background-size: 30% auto;
     background-position: right bottom;
-    background-color: transparent;
+    background-color: transparent; */
     text-align: center;
 }
 .tag{
@@ -45,17 +44,18 @@ body {
     padding: 0;
     margin: 0;
     width:100%;
-    height: 100%;
+    height: 150%;
     background:url('../gazou/sitanoaoiyatutouka.png') no-repeat;
     position: relative;
     z-index: 3;
     background-size:cover;
+    background-position: center bottom;
     background-color: transparent;
     text-align: center;
 }
 .contact{
     /* position: absolute; */
-    bottom: 5%;
+    top: 90%;
     left:0;
     right: 0;
     margin:auto;
@@ -69,7 +69,7 @@ body {
     display: inline-block;
     position: absolute;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0;
 }
 .img2{
     padding: 0;
@@ -85,12 +85,20 @@ body {
     opacity: 0.7;
     text-align: right;
 }
-/* .h1{
-    width: 90%;
+.midashi1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: center;
+    font-size: 1.2rem;
 }
-.h2{
-    width: 90%;
-} */
+.midashi2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: center;
+    font-size: 1rem;
+}
 .text{
     margin-left: auto;
     margin-right: auto;
@@ -98,32 +106,221 @@ body {
     position: center;
     font-size: 0.8rem;
 }
-/* .imgcover{
-    width: 100%;
-    height: 100%;
-    max-width:100%;
-    max-height:100%;
-    object-fit: cover;
-    z-index: 10;
-    position: sticky;
-    background-color: transparent;
-} */
-/* #bg1{
-    background:url('../gazou/titletouka.png') no-repeat;
-}
-#bg2{
-    background:url('../gazou/kamihubukitouka.png') no-repeat;
-}
-#bg3{
-    background:url('../gazou/icontouka.png') no-repeat;
-    background:url('../gazou/sitanoaoiyatu.jpg')
-} */
-/* #contact{
-    font-size: small;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif ;
-    color: navy;
-    opacity: 0;
-    position: center, bottom;
-} */
 
+@media (max-width : 1024px) {
+    html {
+        height: 100%;
+        font-size: x-large;
+    }
+    
+    body {
+        margin:0;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif ;
+    }
+    .box1{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 30%;
+        background:url('../gazou/titletouka.png') no-repeat;
+        background-size: 80% auto;
+        /* background-attachment: fixed; */
+        position: relative;
+        z-index: 2;
+        background-position: center top;
+        background-color: transparent;
+    }
+    .box3{
+        padding: 0;
+        margin: 0;
+        width:100%;
+        height: 50%;
+        position: relative;
+        z-index: 4;
+    /*     background-size: 30% auto;
+        background-position: right bottom;
+        background-color: transparent; */
+        text-align: center;
+    }
+    .tag{
+        padding: 0;
+        margin: 0;
+        color:cornflowerblue;
+    }
+    .box4{
+        padding: 0;
+        margin: 0;
+        width:100%;
+        height: 90%;
+        background:url('../gazou/sitanoaoiyatutouka.png') no-repeat;
+        position: relative;
+        z-index: 3;
+        background-size: 100% auto;
+        background-position: center bottom;
+        background-color: transparent;
+        text-align: center;
+    }
+    .contact{
+        /* position: absolute; */
+        top: 90%;
+        left:0;
+        right: 0;
+        margin:auto;
+    }
+    .img1{
+        padding: 0;
+        margin-left:auto;
+        margin-right:auto;
+        width:100%;
+        height: auto;
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        opacity: 0;
+    }
+    .img2{
+        padding: 0;
+        margin-left:auto;
+        margin-right:0px;
+        width:30%;
+        height: auto;
+        position: absolute;
+        right: 3%;
+        bottom: 3%;
+        z-index: 2;
+        background-color: transparent;
+        opacity: 0.7;
+        text-align: right;
+    }
+    .midashi1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        position: center;
+        font-size: 1.2rem;
+    }
+    .midashi2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        position: center;
+        font-size: 1rem;
+    }
+    .text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        position: center;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width : 599px) {
+    html {
+        height: 100%;
+        font-size: x-large;
+    }
+    
+    body {
+        margin:0;
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif ;
+    }
+    .box1{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 20%;
+        background:url('../gazou/titletouka.png') no-repeat;
+        background-size: 80% auto;
+        /* background-attachment: fixed; */
+        position: relative;
+        z-index: 2;
+        background-position: center top;
+        background-color: transparent;
+    }
+    .box3{
+        padding: 0;
+        margin: 0;
+        width:100%;
+        height: 80%;
+        position: relative;
+        z-index: 4;
+    /*     background-size: 30% auto;
+        background-position: right bottom;
+        background-color: transparent; */
+        text-align: center;
+    }
+    .tag{
+        padding: 0;
+        margin: 0;
+        color:cornflowerblue;
+    }
+    .box4{
+        padding: 0;
+        margin: 0;
+        width:100%;
+        height: 200%;
+        background:url('../gazou/sitanoaoiyatutouka.png') no-repeat;
+        position: relative;
+        z-index: 3;
+        background-size: 100% auto;
+        background-position: center bottom;
+        background-color: transparent;
+        text-align: center;
+    }
+    .contact{
+        /* position: absolute; */
+        top: 90%;
+        left:0;
+        right: 0;
+        margin:auto;
+    }
+    .img1{
+        padding: 0;
+        margin-left:auto;
+        margin-right:auto;
+        width:100%;
+        height: auto;
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        opacity: 0;
+    }
+    .img2{
+        padding: 0;
+        margin-left:auto;
+        margin-right:0px;
+        width:30%;
+        height: auto;
+        position: absolute;
+        right: 3%;
+        bottom: 3%;
+        z-index: 2;
+        background-color: transparent;
+        opacity: 0.7;
+        text-align: right;
+    }
+    .midashi1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        position: center;
+        font-size: 1.2rem;
+    }
+    .midashi2{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        position: center;
+        font-size: 1rem;
+    }
+    .text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        position: center;
+        font-size: 0.8rem;
+    }
+}
